@@ -1,0 +1,17 @@
+Montaje y revisión dumps ram
+https://www.seguridadx.com/volatility/
+
+Extraer perfil sistema a montar
+volatility -f imagen.img imageinfo
+
+Revisar procesos en curso y su pid
+volatility -f imagen.img --profile=PERFIL pstree
+
+Extraer fichero de un proceso
+volatility -f imagen.img --profile=PERFIL memdump -p PID -d DIRECTORIODESTINO
+
+Leer texto de un fichero dumpeado [Default UTF8]
+strings FICHERO > RESULTADO.TXT
+[Se puede variar el numero de bits]
+strings -e l FICHERO > RESULTADO_16BITS.TXT [Para unicode o UTF16]
+
