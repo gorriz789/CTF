@@ -18,4 +18,7 @@
 1. Extraer hash contraseñas usuarios windows [Necesario proceso lsass.exe]  
    `volatility -f IMAGEN.IMG/RAW --profile=PERFIL hasdump`
 
+1. Extraer historial de comandos ejecutados por el usuario utilizando la consola.  
+   `volatility -f IMAGEN.IMG/RAW --profile=PERFIL cmdscan`
+
 

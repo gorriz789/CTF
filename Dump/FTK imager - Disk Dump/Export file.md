@@ -1,0 +1,1 @@
+Select with right button and press ExtractS
