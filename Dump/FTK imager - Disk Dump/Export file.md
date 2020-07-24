@@ -1,1 +1,1 @@
-Select with right button and press ExtractS
+Select with right button and press Extract
